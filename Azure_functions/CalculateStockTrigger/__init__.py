@@ -23,7 +23,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
                             Server=tcp:logistics-db.database.windows.net,1433;
                             Database=Logistics;
                             Uid=admin_log;
-                            Pwd=<your_password>;
+                            Pwd=<>;
                             Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"""
     cnxn = pyodbc.connect(connection_string)
     logging.info(cnxn)
